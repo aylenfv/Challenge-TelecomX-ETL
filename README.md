@@ -37,3 +37,5 @@ Diccionario de datos con la descripción de cada columna:
 * PaymentMethod: forma de pago
 * Charges.Monthly: total de todos los servicios del cliente por mes
 * Charges.Total: total gastado por el cliente
+
+
