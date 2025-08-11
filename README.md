@@ -69,21 +69,21 @@ Descripción de cada columna:
 
 ### 1. **Churn por Cargos Mensuales**
 
-![Churn por Cargos Mensuales](churn-by-monthlyCharges.png)
+![Churn por Cargos Mensuales](..\assets\churn-by-monthlyCharges.png)
 Se observa un aumento de churn en clientes con cargos mensuales altos, especialmente en los primeros meses de contrato.
 
 ---
 
 ### 2. **Churn vs Tenure (Tiempo como Cliente)**
 
-![Churn vs Tenure](churn-by-tenure-line.png)
+![Churn vs Tenure](..\assets\churn-by-tenure-line.png)
 Clientes con menos de 12 meses presentan la mayor evasión. A partir de cierto punto, la tasa de churn se estabiliza.
 
 ---
 
 ### 3. **Tenure vs Cargos Mensuales por Churn**
 
-![Tenure vs Cargos Mensuales](churn-by-tenure-vs-monthlyCharges.png)
+![Tenure vs Cargos Mensuales](..\assets\churn-by-tenure-vs-monthlyCharges.png)
 La combinación de **baja permanencia** y **altos cargos mensuales** es un fuerte predictor de evasión.
 
 ---
@@ -118,12 +118,10 @@ La combinación de **baja permanencia** y **altos cargos mensuales** es un fuert
 
 ```
 📁 TelecomX_LATAM
- ├── TelecomX_LATAM.ipynb   # Notebook principal con análisis y visualizaciones
- ├── churn-by-monthlyCharges.png
- ├── churn-by-tenure-line.png
- ├── churn-by-tenure-vs-monthlyCharges.png
- ├── README.md              # Informe del análisis
- └── data/                  # (Si aplica) Dataset de entrada
+ ├── src/                   # Notebook principal y auxiliar con análisis y visualizaciones
+ ├── assets/                # PNGs de gráficos
+ ├── data/                  # Dataset de entrada
+ └── README.md              # Informe del análisis
 ```
 
 ---
