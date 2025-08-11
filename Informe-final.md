@@ -43,24 +43,24 @@ Telecom X enfrenta una tasa significativa de cancelaciones (churn) y necesita id
 
 ### 5.1. Perfil del cliente (demográficos)
 - **Género:** tasas similares (Female 26.96% vs Male 26.21%). No se observa una diferencia práctica relevante.  
-  ![Relación entre género y churn](../assets/churn-by-gender.png)
+  ![Relación entre género y churn](./assets/churn-by-gender.png)
 - **Senior Citizen:** fuerte diferencia — los clientes mayores (SeniorCitizen = 'Yes') presentan **~41.7%** de churn frente a **~23.6%** en no-seniors. Esto sugiere mayor riesgo en la población mayor.  
-  ![Relación entre personas mayores y churn](../assets/churn-by-seniorCitizen.png)
+  ![Relación entre personas mayores y churn](./assets/churn-by-seniorCitizen.png)
 - **Partner / Dependents:**  
   - `Partner = No` → churn ≈ **32.98%**; `Partner = Yes` → **19.72%**.  
-  ![Relación entre personas con/sin pareja y churn](../assets/churn-by-partner.png)
+  ![Relación entre personas con/sin pareja y churn](./assets/churn-by-partner.png)
   - `Dependents = No` → churn ≈ **31.28%**; `Dependents = Yes` → **15.53%**.  
-  ![Relación entre personas con/sin dependientes y churn](../assets/churn-by-dependents.png)
+  ![Relación entre personas con/sin dependientes y churn](./assets/churn-by-dependents.png)
   => Los clientes sin pareja y sin dependientes tienen tasas de churn más altas; su perfil parece más propenso a abandonar.
 
 ### 5.2. Evasión asociada a suscripciones (servicios)
 - **Tipo de Internet:** `Fiber optic` muestra **alta** evasión con ~**41.9%**, `DSL` ~**19.0%**, `No internet` ~**7.43%**.  
-![Relación entre tipo de internet y churn](../assets/churn-by-internetServiceType.png)
+![Relación entre tipo de internet y churn](./assets/churn-by-internetServiceType.png)
 - **Servicios de valor agregado (OnlineSecurity, OnlineBackup, DeviceProtection, TechSupport):** ausencia de estas suscripciones está asociada a churn mucho más alto (ej.: `OnlineSecurity = No` → **41.78%** vs `Yes` → **14.64%**).  
-![Relación entre clientes con/sin suscripción a Online Security y churn](../assets/churn-by-onlineSecuritySubscription.png)
-![Relación entre clientes con/sin suscripción a Online Backup y churn](../assets/churn-by-onlineBackupSubscription.png)
-![Relación entre clientes con/sin plan Device Protection y churn](../assets/churn-by-deviceProtectionPlan.png)
-![Relación entre clientes con/sin Tech Support y churn](../assets/churn-by-techSupportSubscription.png)
+![Relación entre clientes con/sin suscripción a Online Security y churn](./assets/churn-by-onlineSecuritySubscription.png)
+![Relación entre clientes con/sin suscripción a Online Backup y churn](./assets/churn-by-onlineBackupSubscription.png)
+![Relación entre clientes con/sin plan Device Protection y churn](./assets/churn-by-deviceProtectionPlan.png)
+![Relación entre clientes con/sin Tech Support y churn](./assets/churn-by-techSupportSubscription.png)
   => Los clientes que no tienen servicios complementarios son mucho más propensos a irse; los bundles (paquetes de productos) o upsells (mejorar el servicio que el cliente desea, agregando nuevas características) podrían ayudar a retener.
 
 ### 5.3. Evasión asociada a facturación
@@ -74,26 +74,26 @@ Telecom X enfrenta una tasa significativa de cancelaciones (churn) y necesita id
 
 ### 5.4. Otras observaciones relevantes
 - **Contract type:** `Month-to-month` → churn **~42.71%**, `One year` ~11.28%, `Two year` ~2.85%. Contratos a largo plazo muestran retención mucho mejor.  
-  ![Churn por tipo de contrato](../assets/churn-by-contractType.png)
+  ![Churn por tipo de contrato](./assets/churn-by-contractType.png)
 - **Payment Method:** `Electronic check` tiene churn muy alto (~45.29%), mientras que pagos automáticos (bank transfer / credit card auto) muestran bajas tasas (~16–17%).  
-  ![Churn por forma de pago](../assets/churn-by-paymentMethod.png)
+  ![Churn por forma de pago](./assets/churn-by-paymentMethod.png)
 - **Daily Charges:** parece haber variabilidad por valores diarios, pero la interpretación requiere agrupar o discretizar mejor para sacar conclusiones robustas.
-  ![Churn por cargos diarios](../assets/churn-by-dailyCharges.png)
+  ![Churn por cargos diarios](./assets/churn-by-dailyCharges.png)
 
 ---
 
 ## 6. Visualizaciones clave (y análisis detallado)
 
 1. **Boxplot: Churn by Monthly Charges**  
-   ![Relación entre cargos mensuales y churn](../assets/churn-by-monthlyCharges.png)  
+   ![Relación entre cargos mensuales y churn](./assets/churn-by-monthlyCharges.png)  
    - Análisis: los usuarios churned muestran mayor mediana y cuartil superior en cargos mensuales; sugiere sensibilidad al precio (o a la relación precio/valor).
 
 2. **Línea: Churn Rate by Tenure**  
-   ![Churn Rate by Customer Tenure](../assets/churn-by-tenure-line.png) 
+   ![Churn Rate by Customer Tenure](./assets/churn-by-tenure-line.png) 
    - Análisis: curva decreciente de churn con el tiempo. Primera fase (mes 1–6) es crítica.
 
 3. **Scatter: Tenure vs Monthly Charges (color por Churn)**  
-   ![Churn por Tenure vs Monthly Charges](../assets/churn-by-tenure-vs-monthlyCharges.png)  
+   ![Churn por Tenure vs Monthly Charges](./assets/churn-by-tenure-vs-monthlyCharges.png)  
    - Análisis: alta densidad de churn en combinación de **baja permanencia** y **alto cargo mensual**.
 
 ---
